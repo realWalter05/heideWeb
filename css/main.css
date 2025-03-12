@@ -8,8 +8,10 @@
 	--font-body: "M PLUS 1p", sans-serif;
 	--color-primary: #3f98b9;
 	--color-secondary: #252b42;
+	--color-lightPrimary: #3f98b9;
 	--color-footer: #1c4453;
 	--color-orange: #d27d4b;
+	--color-whitish: #fcfcfc;
 }
 
 body {
