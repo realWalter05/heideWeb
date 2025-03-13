@@ -17,3 +17,7 @@
 body {
 	background-color: #fcfcfc;
 }
+
+.clip-path-diagonal {
+	clip-path: polygon(0 100%, 20% 0, 100% 0, 100% 100%);
+}
