@@ -4,57 +4,48 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="/heideWeb/dist/assets/indexDTX00BA7.css" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+	<script src="./src/javascript.js"></script>
 	<title>TSF Produkty</title>
 </head>
 
 <body>
-	<section class="absolute top-0 left-0 w-screen h-32 z-10 flex flex-row justify-end items-center">
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/">Domů</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/produkty">Produkty</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/odprodej">Odprodej</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/">
-			<svg xmlns="http://www.w3.org/2000/svg"
-				x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-				<path fill="#CFD8DC" d="M15,13h25c1.104,0,2,0.896,2,2v25c0,1.104-0.896,2-2,2H26L15,13z"></path>
-				<path fill="#546E7A"
-					d="M26.832,34.854l-0.916-1.776l0.889-0.459c0.061-0.031,6.101-3.208,9.043-9.104l0.446-0.895l1.79,0.893l-0.447,0.895c-3.241,6.496-9.645,9.85-9.916,9.989L26.832,34.854z">
-				</path>
-				<path fill="#546E7A"
-					d="M38.019 34l-.87-.49c-.207-.116-5.092-2.901-8.496-7.667l1.627-1.162c3.139 4.394 7.805 7.061 7.851 7.087L39 32.26 38.019 34zM26 22H40V24H26z">
-				</path>
-				<path fill="#546E7A" d="M32 20H34V24H32z"></path>
-				<path fill="#2196F3" d="M33,35H8c-1.104,0-2-0.896-2-2V8c0-1.104,0.896-2,2-2h14L33,35z"></path>
-				<path fill="#3F51B5" d="M26 42L23 35 33 35z"></path>
-				<path fill="#FFF"
-					d="M19.172,24h-4.36l-1.008,3H11l4.764-13h2.444L23,27h-2.805L19.172,24z M15.444,22h3.101l-1.559-4.714L15.444,22z">
-				</path>
-			</svg>
+	<section id="nav"
+		class="absolute top-0 md:left-0 right-0 md:bg-transparent w-full md:w-screen md:h-32 p-5 z-20 flex flex-col md:flex-row md:justify-end items-center">
+		<a class="text-xl md:hidden text-whitish font-bold px-2 py-4 mt-4 md:p-0 mx-6" onclick="handleNav()">
+			<img src="./img/menu.svg" alt="Menu" width="48" height="48" />
 		</a>
-		<a class="text-xl text-whitish font-bold ml-6 mr-10 bg-primary  px-8 py-3 rounded-sm"
-			href="/heideWeb/kariera">Kariéra</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/">Domů</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/produkty">Produkty</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/odprodej">Odprodej</a>
+		<a
+			class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 h-8 relative h-8 overflow-y-clip mx-6">
+			<img src="./img/google.svg" alt="Google translate" class="z-10" />
+			<div id="google_translate_element" class="absolute left-[-2px] top-0 opacity-0"></div>
+		</a>
+		<a class="text-xl hidden md:block text-whitish font-bold m-auto md:mr-10 bg-primary px-8 py-5 rounded-sm"
+			href="/kariera">Kariéra</a>
 	</section>
 	<section class="w-screen h-screen bg-[url(/img/videoBackground.jpg)] relative bg-no-repeat bg-cover flex">
-		<article class="z-10 pt-[28vh] pl-[12vw]">
-			<p class="font-display text-8xl font-black">
+		<article class="z-10 pt-[28vh] pl-5 sm:pl-[12vw] w-full">
+			<p class="font-display text-[54px]/14 sm:text-8xl font-black">
 				<span class="text-white"> TSF </span>
 				<span class="text-primary"> Produkty </span>
 			</p>
-			<p class="font-display text-5xl tracking-widest pl-3 pt-5 text-white font-bold uppercase">
-				Čím se zabýváme?
+			<p class="font-display text-3xl sm:text-5xl tracking-widest sm:pl-3 pt-3 sm:pt-5 text-white font-bold">
+				ČÍM SE ZABÝVÁME
 			</p>
 		</article>
 		<div class="absolute w-full h-full opacity-50 bg-gradient-to-r from-black to-[#57C0E7]/80"></div>
 	</section>
-
 	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
-		<div class="flex justify-evenly">
-			<article class="pt-[15vh] z-10 pl-[10vh] w-3xl">
+		<div class="flex xl:flex-row justify-center flex-col self-center xl:self-auto xl:justify-evenly">
+			<article class="pt-[15vh] z-10 xl:pl-[10vh] w-3/4 m-auto xl:m-0 xl:w-3xl">
 				<div>
 					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
 						VYSOUŠECÍ SÍTA
 					</p>
-					<p class="font-display text-7xl font-black">Tkaná síta</p>
+					<p class="font-display text-6xl sm:text-7xl font-black">Tkaná síta</p>
 				</div>
 				<article class="pt-8 leading-8">
 					<p class="pt-5">
@@ -92,24 +83,84 @@
 			</article>
 			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
 				<div class="flex">
-					<img src="./img/produkty/orange_enhanced 1.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/orange_enhanced 2.png" alt="Produkty" class="h-[215px]" />
+					<img src="./img/produkty/orange_enhanced 1.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/orange_enhanced 2.png" alt="Produkty" class="h-38 sm:h-[215px]" />
 				</div>
 				<div class="flex">
-					<img src="./img/produkty/orange_enhanced 3.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/orange_enhanced 4.png" alt="Produkty" class="h-[215px]" />
+					<img src="./img/produkty/orange_enhanced 3.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/orange_enhanced 4.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+				</div>
+				<div class="flex">
+					<img src="./img/produkty/orange_enhanced 3.png" onclick="openModal();currentSlide(1)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/orange_enhanced 4.png" onclick="openModal();currentSlide(2)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 px-2 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/orange_enhanced 4.png" onclick="openModal();currentSlide(3)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
 				</div>
 			</article>
 		</div>
 
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./img/produkty/orange_enhanced 1.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./img/produkty/orange_enhanced 2.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./img/produkty/orange_enhanced 3.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./img/produkty/orange_enhanced 4.png" style="width:100%">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+				</div>
+			</div>
+		</div>
+
 		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
-		<article class="w-[90%] flex m-auto">
-			<div class="grid grid-cols-4 z-10 gap-16">
+		<article class="xl:w-[90%] w-3/4 flex m-auto">
+			<div class="grid xl:grid-cols-4 z-10 gap-16">
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo0.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Lorem ipsum
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/orange_enhanced 1.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							ATSM250
 						</h2>
 					</div>
 					<p class="p-5">
@@ -119,10 +170,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo1.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Dolor sit
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/orange_enhanced 2.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							BST350
 						</h2>
 					</div>
 					<p class="p-5">
@@ -131,10 +182,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo2.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Pretium dignissim
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/orange_enhanced 3.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							POAS1548
 						</h2>
 					</div>
 					<p class="p-5">
@@ -144,10 +195,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo3.png" alt="Ikona látky" width="48" height="auto" />
-						<h2 class="text-3xl font-bold ml-3">
-							Cursus vitae
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/orange_enhanced 4.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							AMTVS480
 						</h2>
 					</div>
 					<p class="p-5">
@@ -161,28 +212,36 @@
 		</article>
 
 		<div
-			class="absolute w-full h-full top-0 bg-linear-[50deg] from-white from-40% via-primary/80 via-60% to-orange to-75%">
+			class="absolute w-full h-full top-0 bg-linear-[80deg] xl:bg-linear-[50deg] from-white from-40% sm:via-primary/80 via-primary/40 via-60% to-orange to-95% sm:to-75%">
 		</div>
 	</section>
 
 	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
-		<div class="flex justify-evenly">
-			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
+		<div class="flex xl:flex-row justify-center flex-col self-center xl:self-auto xl:justify-evenly">
+			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center order-1">
 				<div class="flex">
-					<img src="./img/produkty/gray0.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/gray1.png" alt="Produkty" class="h-[215px] rotate-180" />
+					<img src="./img/produkty/wood0.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/wood1.png" alt="Produkty" class="h-38 sm:h-[215px] rotate-180" />
 				</div>
 				<div class="flex">
-					<img src="./img/produkty/gray2.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/gray3.png" alt="Produkty" class="h-[215px] rotate-180" />
+					<img src="./img/produkty/wood2.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/wood3.png" alt="Produkty" class="h-38 sm:h-[215px] rotate-180" />
+				</div>
+				<div class="flex">
+					<img src="./img/produkty/wood0.png" onclick="openModal();currentSlide(1)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/wood0.png" onclick="openModal();currentSlide(2)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 px-2 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/wood0.png" onclick="openModal();currentSlide(3)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
 				</div>
 			</article>
-			<article class="pt-[15vh] z-10 pl-[10vh] w-3xl">
+			<article class="pt-[15vh] z-10 xl:pl-[10vh] w-3/4 m-auto xl:m-0 xl:w-3xl">
 				<div>
 					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
 						VYSOUŠECÍ SÍTA
 					</p>
-					<p class="font-display text-7xl font-black">Spirálová síta</p>
+					<p class="font-display text-6xl sm:text-7xl font-black">Filtrační tkaniny</p>
 				</div>
 				<article class="pt-8 leading-8">
 					<p class="pt-5">
@@ -221,13 +280,13 @@
 		</div>
 
 		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
-		<article class="w-[90%] flex m-auto">
-			<div class="grid grid-cols-4 z-10 gap-16">
+		<article class="xl:w-[90%] w-3/4 flex m-auto">
+			<div class="grid xl:grid-cols-4 z-10 gap-16">
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo0.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Lorem ipsum
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/wood0.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							ATSM250
 						</h2>
 					</div>
 					<p class="p-5">
@@ -237,10 +296,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo1.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Dolor sit
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/wood1.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							BST350
 						</h2>
 					</div>
 					<p class="p-5">
@@ -249,10 +308,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo2.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Pretium dignissim
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/wood2.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							POAS1548
 						</h2>
 					</div>
 					<p class="p-5">
@@ -262,246 +321,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo3.png" alt="Ikona látky" width="48" height="auto" />
-						<h2 class="text-3xl font-bold ml-3">
-							Cursus vitae
-						</h2>
-					</div>
-					<p class="p-5">
-						Donec convallis non enim eget suscipit.
-						Maximus, neque a fringilla fermentum,
-						nunc risus bibendum libero.
-					</p>
-				</div>
-			</div>
-
-		</article>
-
-		<div
-			class="absolute w-full h-full top-0 bg-linear-to-tl from-white from-40% via-[#A6D2ED]/80 via-60% to-[#8A907F] to-80%">
-		</div>
-	</section>
-
-	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
-		<div class="flex justify-evenly">
-			<article class="pt-[15vh] z-10 pl-[10vh] w-3xl">
-				<div>
-					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
-						VYSOUŠECÍ SÍTA
-					</p>
-					<p class="font-display text-7xl font-black">Odvodňovací síta</p>
-				</div>
-				<article class="pt-8 leading-8">
-					<p class="pt-5">
-						Cras sollicitudin commodo velit eu rhoncus. Aenean
-						imperdiet laoreet elit, non fringilla dolor placerat ut.
-						Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
-						volutpat tincidunt nibh. Etiam molestie libero nec risus
-						venenatis, vitae malesuada tortor faucibus. Nulla porta
-						ut eros a porta. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Vivamus ut dolor a elit
-						consequat gravida at nec dui. Nulla porta
-						ut eros a porta. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Vivamus ut dolor a elit
-						consequat gravida at nec dui.
-					</p>
-					<p class="pt-12 font-bold">
-						Quisque consequat feugiat sem, aliquet faucibus lectus
-						dignissim vel.
-					</p>
-					<ul class="list-disc pl-10">
-						<li>Nulla id neque leo aenean dictum urna eu eros</li>
-						<li>Vestibulum sed nunc id neque</li>
-					</ul>
-					<p class="pt-12">
-						Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
-						volutpat tincidunt.
-					</p>
-					<ul class="list-disc pl-10">
-						<li>Vestibulum sed nunc gravida at nec dui.</li>
-						<li>Nulla id neque leo ut dolor a elit</li>
-					</ul>
-				</article>
-			</article>
-			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
-				<div class="flex">
-					<img src="./img/produkty/blue_enhanced 1.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/blue_enhanced 2.png" alt="Produkty" class="h-[215px]" />
-				</div>
-				<div class="flex">
-					<img src="./img/produkty/blue_enhanced 3.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/blue_enhanced4.png" alt="Produkty" class="h-[215px]" />
-				</div>
-			</article>
-		</div>
-
-		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
-		<article class="w-[90%] flex m-auto">
-			<div class="grid grid-cols-4 z-10 gap-16">
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo0.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Lorem ipsum
-						</h2>
-					</div>
-					<p class="p-5">
-						Nunc a tellus et nisl laoreet finibus. Etiam
-						ut iaculis odio, sit amet malesuada orci.
-						Praesent aliquam magna ut sem porta.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo1.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Dolor sit
-						</h2>
-					</div>
-					<p class="p-5">
-						Nulla mi dolor, varius eget magna id, dictum facilisis diam. Fusce pretium dignissim viverra.
-						Etiam commodo consectetur lacus.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo2.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Pretium dignissim
-						</h2>
-					</div>
-					<p class="p-5">
-						Feugiat eros vitae,
-						suscipit turpis. Aliquam neque leo, aliquam et cursus vitae, aliquam et elit. Mauris sed lorem
-						convallis, porttitor.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo3.png" alt="Ikona látky" width="48" height="auto" />
-						<h2 class="text-3xl font-bold ml-3">
-							Cursus vitae
-						</h2>
-					</div>
-					<p class="p-5">
-						Donec convallis non enim eget suscipit.
-						Maximus, neque a fringilla fermentum,
-						nunc risus bibendum libero.
-					</p>
-				</div>
-			</div>
-
-		</article>
-
-		<div
-			class="absolute w-full h-full top-0 bg-linear-[50deg] from-white from-40% via-[#4EA5DC]/80 via-65% to-white">
-		</div>
-	</section>
-
-	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
-		<div class="flex justify-evenly">
-			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
-				<div class="flex">
-					<img src="./img/produkty/wood0.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/wood1.png" alt="Produkty" class="h-[215px] rotate-180" />
-				</div>
-				<div class="flex">
-					<img src="./img/produkty/wood2.png" alt="Produkty" class="h-[215px]" />
-					<img src="./img/produkty/wood3.png" alt="Produkty" class="h-[215px] rotate-180" />
-				</div>
-			</article>
-			<article class="pt-[15vh] z-10 pl-[10vh] w-3xl">
-				<div>
-					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
-						VYSOUŠECÍ SÍTA
-					</p>
-					<p class="font-display text-7xl font-black">Filtrační tkaniny</p>
-				</div>
-				<article class="pt-8 leading-8">
-					<p class="pt-5">
-						Cras sollicitudin commodo velit eu rhoncus. Aenean
-						imperdiet laoreet elit, non fringilla dolor placerat ut.
-						Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
-						volutpat tincidunt nibh. Etiam molestie libero nec risus
-						venenatis, vitae malesuada tortor faucibus. Nulla porta
-						ut eros a porta. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Vivamus ut dolor a elit
-						consequat gravida at nec dui. Nulla porta
-						ut eros a porta. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Vivamus ut dolor a elit
-						consequat gravida at nec dui.
-					</p>
-					<p class="pt-12 font-bold">
-						Quisque consequat feugiat sem, aliquet faucibus lectus
-						dignissim vel.
-					</p>
-					<ul class="list-disc pl-10">
-						<li>Nulla id neque leo aenean dictum urna eu eros</li>
-						<li>Vestibulum sed nunc id neque</li>
-					</ul>
-					<p class="pt-12">
-						Aenean dictum urna eu eros ultrices,
-						sed posuere velit laoreet. Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
-						volutpat tincidunt.
-					</p>
-					<ul class="list-disc pl-10">
-						<li>Vestibulum sed nunc gravida at nec dui.</li>
-						<li>Nulla id neque leo ut dolor a elit</li>
-					</ul>
-				</article>
-			</article>
-		</div>
-
-		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
-		<article class="w-[90%] flex m-auto">
-			<div class="grid grid-cols-4 z-10 gap-16">
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo0.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Lorem ipsum
-						</h2>
-					</div>
-					<p class="p-5">
-						Nunc a tellus et nisl laoreet finibus. Etiam
-						ut iaculis odio, sit amet malesuada orci.
-						Praesent aliquam magna ut sem porta.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo1.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Dolor sit
-						</h2>
-					</div>
-					<p class="p-5">
-						Nulla mi dolor, varius eget magna id, dictum facilisis diam. Fusce pretium dignissim viverra.
-						Etiam commodo consectetur lacus.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo2.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Pretium dignissim
-						</h2>
-					</div>
-					<p class="p-5">
-						Feugiat eros vitae,
-						suscipit turpis. Aliquam neque leo, aliquam et cursus vitae, aliquam et elit. Mauris sed lorem
-						convallis, porttitor.
-					</p>
-				</div>
-				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo3.png" alt="Ikona látky" width="48" height="auto" />
-						<h2 class="text-3xl font-bold ml-3">
-							Cursus vitae
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/wood3.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							AMTVS480
 						</h2>
 					</div>
 					<p class="p-5">
@@ -520,13 +343,13 @@
 	</section>
 
 	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
-		<div class="flex justify-evenly">
-			<article class="pt-[15vh] z-10 pl-[10vh] w-3xl">
+		<div class="flex xl:flex-row justify-center flex-col self-center xl:self-auto xl:justify-evenly">
+			<article class="pt-[15vh] z-10 xl:pl-[10vh] w-3/4 m-auto xl:m-0 xl:w-3xl">
 				<div>
 					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
-						ODVODŇOVACÍ SÍTA
+						VYSOUŠECÍ SÍTA
 					</p>
-					<p class="font-display text-7xl font-black">Lisová síta</p>
+					<p class="font-display text-5xl sm:text-7xl font-black">Odvodňovací síta</p>
 				</div>
 				<article class="pt-8 leading-8">
 					<p class="pt-5">
@@ -563,19 +386,33 @@
 				</article>
 			</article>
 			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
-					<img src="./img/produkty/weirdGray.png" alt="Produkty" class="h-[500px] w-[500px]" />
-
+				<div class="flex">
+					<img src="./img/produkty/blue_enhanced 1.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/blue_enhanced 2.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+				</div>
+				<div class="flex">
+					<img src="./img/produkty/blue_enhanced 3.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+					<img src="./img/produkty/blue_enhanced4.png" alt="Produkty" class="h-38 sm:h-[215px]" />
+				</div>
+				<div class="flex">
+					<img src="./img/produkty/blue_enhanced 1.png" onclick="openModal();currentSlide(1)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/blue_enhanced 1.png" onclick="openModal();currentSlide(2)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 px-2 h-24 sm:h-[137px]" />
+					<img src="./img/produkty/blue_enhanced 1.png" onclick="openModal();currentSlide(3)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 h-24 sm:h-[137px]" />
+				</div>
 			</article>
 		</div>
 
 		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
-		<article class="w-[90%] flex m-auto">
-			<div class="grid grid-cols-4 z-10 gap-16">
+		<article class="xl:w-[90%] w-3/4 flex m-auto">
+			<div class="grid xl:grid-cols-4 z-10 gap-16">
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo0.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Lorem ipsum
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/blue_enhanced 1.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							ATSM250
 						</h2>
 					</div>
 					<p class="p-5">
@@ -585,10 +422,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo1.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Dolor sit
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/blue_enhanced 2.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							BST350
 						</h2>
 					</div>
 					<p class="p-5">
@@ -597,10 +434,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo2.png" alt="Ikona látky" width="48" />
-						<h2 class="text-3xl font-bold ml-3">
-							Pretium dignissim
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/blue_enhanced 3.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							POAS1548
 						</h2>
 					</div>
 					<p class="p-5">
@@ -610,10 +447,10 @@
 					</p>
 				</div>
 				<div class="flex flex-col">
-					<div class="flex">
-						<img src="./img/produkty/produktPodInfo3.png" alt="Ikona látky" width="48" height="auto" />
-						<h2 class="text-3xl font-bold ml-3">
-							Cursus vitae
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/blue_enhanced4.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							AMTVS480
 						</h2>
 					</div>
 					<p class="p-5">
@@ -627,45 +464,208 @@
 		</article>
 
 		<div
-			class="absolute w-full h-full top-0 bg-linear-[50deg] from-white from-40% via-[#A6D2ED]/80 via-55% to-[#8A907F] to-70%">
+			class="absolute w-full h-full top-0 bg-linear-[85deg] xl:bg-linear-[50deg] from-white from-40% via-[#4EA5DC]/80 via-65% to-white">
+		</div>
+	</section>
+
+	<section class="w-screen relative pb-[15vh] flex align-middle justify-center flex-col">
+		<div class="flex xl:flex-row justify-center flex-col self-center xl:self-auto xl:justify-evenly">
+			<article class="pt-[15vh] z-10 xl:pl-[10vh] w-3/4 m-auto xl:m-0 xl:w-3xl">
+				<div>
+					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
+						ODVODŇOVACÍ SÍTA
+					</p>
+					<p class="font-display text-6xl sm:text-7xl font-black">Lisová síta</p>
+				</div>
+				<article class="pt-8 leading-8">
+					<p class="pt-5">
+						Cras sollicitudin commodo velit eu rhoncus. Aenean
+						imperdiet laoreet elit, non fringilla dolor placerat ut.
+						Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
+						volutpat tincidunt nibh. Etiam molestie libero nec risus
+						venenatis, vitae malesuada tortor faucibus. Nulla porta
+						ut eros a porta. Aenean dictum urna eu eros ultrices,
+						sed posuere velit laoreet. Vivamus ut dolor a elit
+						consequat gravida at nec dui. Nulla porta
+						ut eros a porta. Aenean dictum urna eu eros ultrices,
+						sed posuere velit laoreet. Aenean dictum urna eu eros ultrices,
+						sed posuere velit laoreet. Vivamus ut dolor a elit
+						consequat gravida at nec dui.
+					</p>
+					<p class="pt-12 font-bold">
+						Quisque consequat feugiat sem, aliquet faucibus lectus
+						dignissim vel.
+					</p>
+					<ul class="list-disc pl-10">
+						<li>Nulla id neque leo aenean dictum urna eu eros</li>
+						<li>Vestibulum sed nunc id neque</li>
+					</ul>
+					<p class="pt-12">
+						Aenean dictum urna eu eros ultrices,
+						sed posuere velit laoreet. Nulla facilisi. Mauris lacus dui, varius quis nunc eu,
+						volutpat tincidunt.
+					</p>
+					<ul class="list-disc pl-10">
+						<li>Vestibulum sed nunc gravida at nec dui.</li>
+						<li>Nulla id neque leo ut dolor a elit</li>
+					</ul>
+				</article>
+			</article>
+			<article class="flex flex-col z-10 pt-[10vh] items-center justify-center">
+				<div class="flex">
+					<img src="./img/produkty/weirdGray.png" alt="Produkty"
+						class="h-76 w-76 sm:h-[500px] sm:w-[500px]" />
+				</div>
+				<div class="flex">
+					<img src="./img/produkty/weirdGray.png" onclick="openModal();currentSlide(1)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 w-26 h-26 sm:h-[137px]" />
+					<img src="./img/produkty/weirdGray.png" onclick="openModal();currentSlide(2)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 px-2 w-26 h-26 sm:h-[137px]" />
+					<img src="./img/produkty/weirdGray.png" onclick="openModal();currentSlide(3)" alt="Produkty"
+						class="hover:brightness-80 cursor-pointer transition mt-3 w-26 h-26 sm:h-[137px]" />
+				</div>
+			</article>
+		</div>
+
+		<hr class="h-px z-10 my-24 mx-16 left-0 bg-primary border-0" />
+		<article class="xl:w-[90%] w-3/4 flex m-auto">
+			<div class="grid xl:grid-cols-4 z-10 gap-16">
+				<div class="flex flex-col">
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/weirdGray.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							ATSM250
+						</h2>
+					</div>
+					<p class="p-5">
+						Nunc a tellus et nisl laoreet finibus. Etiam
+						ut iaculis odio, sit amet malesuada orci.
+						Praesent aliquam magna ut sem porta.
+					</p>
+				</div>
+				<div class="flex flex-col">
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/weirdGray.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							BST350
+						</h2>
+					</div>
+					<p class="p-5">
+						Nulla mi dolor, varius eget magna id, dictum facilisis diam. Fusce pretium dignissim viverra.
+						Etiam commodo consectetur lacus.
+					</p>
+				</div>
+				<div class="flex flex-col">
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/weirdGray.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							POAS1548
+						</h2>
+					</div>
+					<p class="p-5">
+						Feugiat eros vitae,
+						suscipit turpis. Aliquam neque leo, aliquam et cursus vitae, aliquam et elit. Mauris sed lorem
+						convallis, porttitor.
+					</p>
+				</div>
+				<div class="flex flex-col">
+					<div class="flex h-[48px]">
+						<img src="./img/produkty/weirdGray.png" alt="Ikona látky" width="48" height="48" />
+						<h2 class="text-3xl mt-2 font-bold ml-3">
+							AMTVS480
+						</h2>
+					</div>
+					<p class="p-5">
+						Donec convallis non enim eget suscipit.
+						Maximus, neque a fringilla fermentum,
+						nunc risus bibendum libero.
+					</p>
+				</div>
+			</div>
+
+		</article>
+		<div
+			class="absolute w-full h-full top-0 bg-linear-[95deg] sm:bg-linear-[50deg] from-white from-40% via-[#A6D2ED]/80 via-55% to-[#8A907F] to-70%">
 		</div>
 	</section>
 
 
-	<footer class="bg-footer h-128 grid grid-cols-2 p-28">
+	<footer
+		class="bg-footer xl:justify-items-normal justify-items-center h-auto xl:h-128 grid xl:grid-cols-2 py-32 px-8 xl:p-28">
 		<article>
-			<p class="font-display text-7xl pl-16 font-black">
+			<p class="font-display text-5xl sm:text-7xl xl:pl-16 font-black">
 				<span class="text-white"> TSF </span>
 				<span class="text-primary"> Strakonice </span>
 			</p>
-			<div class="flex justify-around pt-32 pr-48">
+			<div class="xl:flex block justify-around xl:py-0 py-8 xl:pt-32 xl:pr-48">
 				<img src="./img/norma0.png" alt="ČSN NORMA 14001"
-					class="h-24 opacity-60 hover:opacity-100 rounded-4xl" />
+					class="h-24 opacity-60 m-auto my-8 xl:my-0 hover:opacity-100 rounded-4xl" />
 				<img src="./img/norma1.png" alt="ČSN NORMA 9001"
-					class="h-24 opacity-60 hover:opacity-100 rounded-4xl" />
+					class="h-24 opacity-60 m-auto my-8 xl:my-0 hover:opacity-100 rounded-4xl" />
 			</div>
 		</article>
-		<article class="w-[100%] grid grid-cols-2 content-center gap-8 align-middle">
-			<div class="flex flex-col">
-				<p class="text-4xl text-white font-extrabold">Další informace</p>
-				<p class="text-lg  pt-3 text-white">Kariéra u nás</p>
-				<p class="text-lg  pt-3 text-white">Výroční zprávy</p>
-				<p class="text-lg  pt-3 text-white">Výpis majetku</p>
-				<p class="text-lg  pt-3 text-white">Informace o firmě</p>
+		<article
+			class="w-[100%]xl:justify-items-normal justify-items-center grid xl:grid-cols-2 content-center gap-8 align-middle">
+			<div class="flex mt-8 w-full xl:mt-0 flex-col">
+				<p class="text-3xl sm:text-4xl text-white font-extrabold">Další informace</p>
+				<p class="text-lg pt-6 text-white"><a href="/kariera">Kariéra u nás</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/informace">Výroční zprávy</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/copyright">Copyright</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/">Domovská stránka</a></p>
 			</div>
-			<div class="flex flex-col">
-				<p class="text-4xl text-white font-extrabold">Kontakt na nás</p>
-				<p class="text-lg  pt-3 text-white">Fakturace: +420 602 237 118</p>
+			<div class="flex mt-8 w-full xl:mt-0 flex-col">
+				<p class="text-3xl sm:text-4xl text-white font-extrabold">Kontakt na nás</p>
+				<p class="text-lg  pt-6 text-white">Fakturace: +420 602 237 118</p>
 				<p class="text-lg  pt-3 text-white">Logistika: +420 606 021 287</p>
 				<p class="text-lg  pt-3 text-white">Obchod a servis: +420 606 793 232 </p>
 				<p class="text-lg  pt-3 text-white">E-mail: tsf@tsf.cz </p>
 			</div>
 		</article>
 	</footer>
-	<a href="https://www.flaticon.com/free-icons/support" title="support icons">Support icons created by Freepik -
-		Flaticon</a>
-	<a href="https://www.freepik.com/icon/fabric_12864540#fromView=keyword&page=1&position=2&uuid=62f154ef-677e-486c-b786-fc6a6fedfe4d"
-		title="Fabric icon">Designed by Freepik</a>
 </body>
+<script>
+	// Open the Modal
+	function openModal() {
+		document.getElementById("myModal").style.display = "block";
+	}
+
+	// Close the Modal
+	function closeModal() {
+		document.getElementById("myModal").style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		var captionText = document.getElementById("caption");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+		captionText.innerHTML = dots[slideIndex - 1].alt;
+	}
+</script>
+<script type="text/javascript"
+	src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>

@@ -4,57 +4,50 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="/heideWeb/dist/assets/indexDTX00BA7.css" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+	<script src="./src/javascript.js"></script>
 	<title>TSF Strakonice</title>
 </head>
 
 <body>
-	<section class="absolute top-0 left-0 w-screen h-32 z-10 flex flex-row justify-end items-center">
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/">Domů</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/produkty">Produkty</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/odprodej">Odprodej</a>
-		<a class="text-xl text-whitish font-bold mx-6" href="/heideWeb/">
-			<svg xmlns="http://www.w3.org/2000/svg"
-				x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-				<path fill="#CFD8DC" d="M15,13h25c1.104,0,2,0.896,2,2v25c0,1.104-0.896,2-2,2H26L15,13z"></path>
-				<path fill="#546E7A"
-					d="M26.832,34.854l-0.916-1.776l0.889-0.459c0.061-0.031,6.101-3.208,9.043-9.104l0.446-0.895l1.79,0.893l-0.447,0.895c-3.241,6.496-9.645,9.85-9.916,9.989L26.832,34.854z">
-				</path>
-				<path fill="#546E7A"
-					d="M38.019 34l-.87-.49c-.207-.116-5.092-2.901-8.496-7.667l1.627-1.162c3.139 4.394 7.805 7.061 7.851 7.087L39 32.26 38.019 34zM26 22H40V24H26z">
-				</path>
-				<path fill="#546E7A" d="M32 20H34V24H32z"></path>
-				<path fill="#2196F3" d="M33,35H8c-1.104,0-2-0.896-2-2V8c0-1.104,0.896-2,2-2h14L33,35z"></path>
-				<path fill="#3F51B5" d="M26 42L23 35 33 35z"></path>
-				<path fill="#FFF"
-					d="M19.172,24h-4.36l-1.008,3H11l4.764-13h2.444L23,27h-2.805L19.172,24z M15.444,22h3.101l-1.559-4.714L15.444,22z">
-				</path>
-			</svg>
+	<section id="nav"
+		class="absolute top-0 md:left-0 right-0 md:bg-transparent w-full md:w-screen md:h-32 p-5 z-20 flex flex-col md:flex-row md:justify-end items-center">
+		<a class="text-xl md:hidden text-whitish font-bold px-2 py-4 mt-4 md:p-0 mx-6" onclick="handleNav()">
+			<img src="./img/menu.svg" alt="Menu" width="48" height="48" />
 		</a>
-		<a class="text-xl text-whitish font-bold ml-6 mr-10 bg-primary  px-8 py-3 rounded-sm"
-			href="/heideWeb/kariera">Kariéra</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/">Domů</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/produkty">Produkty</a>
+		<a class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 mx-6" href="/odprodej">Odprodej</a>
+		<a
+			class="text-xl hidden md:block text-whitish font-bold px-2 py-4 md:p-0 h-8 relative h-8 overflow-y-clip mx-6">
+			<img src="./img/google.svg" alt="Google translate" class="z-10" />
+			<div id="google_translate_element" class="absolute left-[-2px] top-0 opacity-0"></div>
+		</a>
+		<a class="text-xl hidden md:block text-whitish font-bold m-auto md:mr-10 bg-primary px-8 py-5 rounded-sm"
+			href="/kariera">Kariéra</a>
 	</section>
 	<section class="w-screen h-screen bg-[url(/img/videoBackground.jpg)] relative bg-no-repeat bg-cover flex">
-		<article class="z-10 pt-[28vh] pl-[12vw]">
-			<p class="font-display text-8xl font-black">
+		<article class="z-10 pt-[28vh] pl-5 sm:pl-[12vw] w-full">
+			<p class="font-display text-[54px]/14 sm:text-8xl font-black">
 				<span class="text-white"> TSF </span>
 				<span class="text-primary"> Strakonice </span>
 			</p>
-			<p class="font-display text-5xl tracking-widest pl-3 pt-5 text-white font-bold">
+			<p class="font-display text-3xl sm:text-5xl tracking-widest sm:pl-3 pt-3 sm:pt-5 text-white font-bold">
 				SÍTA A FILTRAČNÍ TKANINY
 			</p>
 		</article>
 		<div class="absolute w-full h-full opacity-50 bg-gradient-to-r from-black to-[#57C0E7]/80"></div>
 	</section>
 
-	<section class="w-screen relative flex justify-evenly pb-[15vh]">
-		<article class="z-10 pt-[15vh] pl-[10vh] w-3xl">
+	<section
+		class="w-screen text-justify md:text-left relative justify-evenly p-0 xl:pb-[15vh] flex xl:flex-row flex-col">
+		<article class="z-10 md:pt-[15vh] px-5 py-12 md:pl-[10vh] w-full md:w-3xl">
 			<div>
-				<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
+				<p class="font-display uppercase text-xl text-primary md:tracking-widest md:pl-3 md:pt-3 font-bold">
 					<span class="text-black"> VYRÁBÍME </span> RŮZNÉ
 					PRODUKTY
 				</p>
-				<p class="font-display text-8xl font-black">Produkty</p>
+				<p class="font-display text-6xl md:text-8xl font-black">Produkty</p>
 			</div>
 			<article class="pt-8 leading-8">
 				<p class="font-bold">
@@ -83,25 +76,29 @@
 					<li>Donec nisl turpis</li>
 					<li>Suspendisse dolor dui</li>
 				</ul>
-				<button class="bg-primary rounded-4xl text-sm font-medium uppercase text-white px-8 py-4 mt-10">
-					Na PRODUKTY
-				</button>
+				<a href="/produkty">
+					<button
+						class="bg-primary rounded-4xl text-sm font-medium uppercase text-white px-8 py-4 mt-10 cursor-pointer">
+						Na PRODUKTY
+					</button>
+				</a>
 			</article>
 		</article>
-		<article class="flex flex-col z-10 pt-[25vh] items-center justify-center">
-			<img src="./img/blueSita.JPG" alt="Produkty" class="h-[392px] rounded-4xl" />
-			<div class="flex pt-5">
-				<img src="./img/tightSita.JPG" alt="Produkty" class="h-[200px] rounded-4xl" />
-				<img src="./img/redSita.JPG" alt="Produkty" class="h-[299px] pl-5 rounded-4xl" />
+		<article class="xl:flex p-5 xl:flex-col z-10 xl:pt-[25vh] items-center justify-center">
+			<img src="./img/blueSita.JPG" alt="Produkty" class="xl:h-[392px] w-full xl:w-auto rounded-4xl" />
+			<div class="xl:flex pt-5">
+				<img src="./img/tightSita.JPG" alt="Produkty" class="xl:h-[200px] w-full xl:w-auto rounded-4xl" />
+				<img src="./img/redSita.JPG" alt="Produkty"
+					class="xl:h-[299px] w-full xl:w-auto pt-5  xl:pl-5 rounded-4xl" />
 			</div>
 		</article>
 
 		<div class="absolute w-full h-full bg-gradient-to-br from-white from-35% via-[#3F98B9] via-65% to-orange"></div>
 	</section>
 
-	<section class="w-screen grid grid-cols-2">
+	<section class="w-screen grid xl:grid-cols-2 md:grid-cols-[20%_1fr] grid-cols-[10%_1fr]">
 		<div
-			class="absolute w-1/2 right-0 h-full bg-linear-[17deg] from-white from-75% via-[#3F98B9]/50 via-85% to-orange z-10">
+			class="absolute md:w-[80%] w-[90%] xl:w-1/2 right-0 h-full bg-linear-[25deg] sm:bg-linear-[17deg] from-white from-75% via-[#3F98B9]/50 via-85% to-orange z-10">
 		</div>
 
 		<article class="h-full bg-[url(/img/redMachine.png)] bg-no-repeat bg-right-bottom bg-cover"></article>
@@ -111,14 +108,14 @@
 			<div class="absolute top-[60%] ml-[-10%] h-[50%] w-[15%] rounded-[80%] bg-white"></div>
 			</div>
 
-			<div class="z-10 pt-[20vh] px-[4rem]">
+			<div class="z-10 pt-[20vh] px-2 sm:px-[4rem]">
 				<div>
 					<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
 						JSME FIRMA
 						<span class="text-black">S 30 LETOU TRADICÍ</span>
 					</p>
-					<p class="font-display text-8xl font-black">
-						Firma TSF
+					<p class="font-display text-4xl sm:text-7xl font-black">
+						Společnost TSF
 					</p>
 				</div>
 				<article class="z-10 pt-8 leading-8 mb-16">
@@ -153,7 +150,7 @@
 					</p>
 
 					<hr class="h-px my-24  bg-lightPrimary border-0" />
-					<div class="grid grid-cols-2">
+					<div class="grid grid-cols-1 xl:grid-cols-2">
 						<div class="flex flex-col">
 							<div class="flex">
 								<img src="./img/fabricIcon.png" alt="Ikona látky" width="48" />
@@ -171,7 +168,7 @@
 							<div class="flex">
 								<img src="./img/helpIcon.png" alt="Ikona látky" width="48" />
 								<h2 class="text-3xl ml-3 font-bold">
-									Poradenské služby
+									Poradenství
 								</h2>
 							</div>
 							<p class="p-5">
@@ -186,11 +183,11 @@
 		</article>
 	</section>
 
-	<section class="w-screen h-[46vh] flex relative">
+	<section class="w-screen max-[400px]:h-[35rem] h-[30rem] sm:h-[35rem] xl:h-[46vh] flex relative">
 		<article
-			class="w-full h-full bg-linear-[8deg] from-white from-15% via-[#3F98B9] via-24% to-footer to-45% p-[8vh]">
-			<div class="w-[32%]">
-				<h2 class="font-display text-6xl font-black text-white">
+			class="w-full h-full bg-linear-[8deg] from-white from-8% sm:from-15% via-[#3F98B9] via-24% to-footer to-45% py-[3rem] px-[2rem] sm:p-[8vh]">
+			<div class="w-3/4 sm:w-2/4 xl:w-[32%]">
+				<h2 class="font-display text-3xl sm:text-6xl font-black text-white">
 					Pracovní nabídky
 				</h2>
 				<p class="pt-5 text-white">
@@ -240,7 +237,7 @@
 		</article>
 
 		<article
-			class="h-full w-[67.8vw] bg-[url(/img/work.png)] z-100 bg-no-repeat bg-center bg-cover absolute right-0 clip-path-diagonal">
+			class="w-[25vw] h-full sm:w-[35vw] md:w-[40vw] xl:w-[67.8vw] bg-[url(/img/work.png)] z-100 bg-no-repeat bg-center bg-cover absolute right-0 clip-path-diagonal">
 		</article>
 	</section>
 
@@ -249,13 +246,15 @@
 			<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
 				CO NABÍZÍME?
 			</p>
-			<p class="font-display text-8xl font-black">Naše služby</p>
+			<p class="font-display text-5xl xl:text-8xl font-black">Naše služby</p>
 		</div>
 		<div class="flex flex-col">
-			<div class="grid grid-cols-2 content-between pt-[20vh]">
-				<img src="./img/blueSita.JPG" alt="Produkty" class="object-cover w-7/8 h-124 rounded-r-4xl" />
+			<div
+				class="grid xl:justify-items-normal justify-items-center xl:grid-cols-2 content-between pt-[5rem] xl:pt-[20vh]">
+				<img src="./img/blueSita.JPG" alt="Produkty"
+					class="object-cover w-7/8 h-124 xl:rounded-r-4xl xl:mb-0 mb-[3rem]" />
 
-				<article class="leading-8 flex flex-col justify-center pl-[10vw] pr-16">
+				<article class="leading-8 flex flex-col justify-center  w-3/4 xl:w-full xl:pr-16">
 					<h3 class="font-bold text-3xl">
 						Lorem ipsum dolor sit amet consectetur
 
@@ -278,9 +277,10 @@
 					</p>
 				</article>
 			</div>
-			<div class="grid grid-cols-2 content-between pt-[13vh]">
+			<div
+				class="grid xl:justify-items-normal justify-items-center xl:grid-cols-2 content-between pt-[5rem] xl:pt-[13vh]">
 
-				<article class="leading-8 flex flex-col justify-center pr-36 pl-[5vw]">
+				<article class="leading-8 flex flex-col justify-center xl:pr-36  w-3/4 xl:w-full xl:pl-[5vw]">
 					<h3 class="font-bold text-3xl">
 						Lorem ipsum dolor sit amet
 					</h3>
@@ -300,13 +300,15 @@
 					</p>
 				</article>
 				<img src="./img/tightSita.JPG" alt="Produkty"
-					class="object-cover w-7/8 justify-self-end h-124 rounded-l-4xl" />
+					class="object-cover w-7/8 xl:justify-self-end h-124 mt-8 xl:mt-0 xl:rounded-l-4xl" />
 
 			</div>
-			<div class="grid grid-cols-2 content-between pt-[13vh]">
-				<img src="./img/redSita.JPG" alt="Produkty" class="object-cover w-7/8 h-124 rounded-r-4xl" />
+			<div
+				class="grid xl:justify-items-normal justify-items-center xl:grid-cols-2 content-between pt-[5rem] xl:pt-[13vh]">
+				<img src="./img/redSita.JPG" alt="Produkty"
+					class="object-cover w-7/8 h-124 mb-5 xl:mb-0 xl:rounded-r-4xl" />
 
-				<article class="leading-8 flex flex-col justify-center pl-[10vw] pr-16">
+				<article class="leading-8 flex flex-col justify-center  w-3/4 xl:w-full xl:pr-16">
 					<h3 class="font-bold text-3xl">
 						Lorem ipsum adipiscing elit.
 
@@ -329,9 +331,10 @@
 					</p>
 				</article>
 			</div>
-			<div class="grid grid-cols-2 content-between pt-[13vh]">
+			<div
+				class="grid xl:justify-items-normal justify-items-center xl:grid-cols-2 content-between pt-[5rem] xl:pt-[13vh]">
 
-				<article class="leading-8 flex flex-col justify-center pr-36 pl-[5vw]">
+				<article class="leading-8 flex flex-col justify-center xl:pr-36 w-3/4 xl:w-full xl:pl-[5vw]">
 					<h3 class="font-bold text-3xl">
 						Consectetur adipiscing elit.
 
@@ -350,13 +353,16 @@
 					</ul>
 				</article>
 				<img src="./img/site 1.png" alt="Produkty"
-					class="object-cover w-7/8 justify-self-end h-124 rounded-l-4xl" />
+					class="object-cover w-7/8 h-124 xl:rounded-r-4xl xl:mb-0 mb-[3rem] mt-5 xl:mt-0" />
+
 
 			</div>
-			<div class="grid grid-cols-2 content-between pt-[13vh]">
-				<img src="./img/cervena 1.png" alt="Produkty" class="object-cover w-7/8 h-124 rounded-tr-4xl" />
+			<div
+				class="grid xl:justify-items-normal justify-items-center xl:grid-cols-2 content-between pt-[5rem] xl:pt-[13vh] mb-24">
+				<img src="./img/cervena 1.png" alt="Produkty"
+					class="object-cover w-7/8 h-124 xl:mb-0 xl:rounded-r-4xl" />
 
-				<article class="leading-8 flex flex-col justify-center pl-[10vw] pr-16">
+				<article class="leading-8 flex flex-col justify-center  w-3/4 xl:w-full pb-5 xl:pr-16">
 					<h3 class="font-bold text-3xl">
 						Lorem ipsum dolor sit amet, consectetur
 
@@ -384,23 +390,23 @@
 
 	</section>
 
-	<section class="w-screen h-[40rem] bg-gradient-to-l from-orange to-[#2A6378]">
-		<div class=" pt-[15vh] pl-[5vw]">
+	<section class="w-screen h-auto sm:h-[40rem] bg-gradient-to-l from-orange to-[#2A6378]">
+		<div class="pt-[5rem] sm:mt-0 sm:pt-[15vh] pl-[5vw]">
 			<p class="font-display uppercase text-2xl text-[#A0E6FF] tracking-widest pl-1 py-3 font-bold">
 				TSF JE ECO-FRIENDLY
 			</p>
-			<p class="font-display text-7xl font-black text-white">Staráme se o přírodu</p>
+			<p class="font-display text-4xl sm:text-7xl font-black text-white">Staráme se o přírodu</p>
 		</div>
-		<article class="w-[100%] text-center grid grid-cols-3 content-center h-[60%] gap-8 align-middle">
-			<div class="flex flex-col">
+		<article class="w-[100%] text-center grid sm:grid-cols-3 content-center h-auto sm:h-[60%] gap-8 align-middle">
+			<div class="flex flex-col mt-12 sm:my-0">
 				<p class="text-4xl text-white font-extrabold">6 690 ks</p>
 				<p class="text-lg uppercase pt-3 tracking-[0.2em] text-[#AED5E3] font-bold">Vysázených stromů</p>
 			</div>
-			<div class="flex flex-col">
+			<div class="flex flex-col mt-12 sm:my-0">
 				<p class="text-4xl text-white font-extrabold">145 %</p>
 				<p class="text-lg uppercase pt-3 tracking-[0.2em] text-[#AED5E3] font-bold">Lorem ipsum dolor</p>
 			</div>
-			<div class="flex flex-col">
+			<div class="flex flex-col mt-12 mb-18 sm:my-0">
 				<p class="text-4xl text-white font-extrabold">6 690 ks</p>
 				<p class="text-lg uppercase pt-3 tracking-[0.2em] text-[#AED5E3] font-bold">Darovaných na charitu</p>
 			</div>
@@ -412,16 +418,16 @@
 		<div class="absolute w-full h-full  bg-gradient-to-r from-white from-40% to-primary to-80% opacity-50 z-10">
 		</div>
 
-		<article class="z-10 pt-[15vh] pl-[10vh] w-full flex justify-center flex-col align-middle relative">
+		<article class="z-10 pt-[15vh] px-8 lg:pl-[10vh] w-full flex justify-center flex-col align-middle relative">
 
 			<div>
 				<p class="font-display uppercase text-xl text-primary tracking-widest pl-3 pt-3 font-bold">
 					<span class="text-black"> Máte </span> nějaký dotaz?
 				</p>
-				<p class="font-display text-7xl font-black">Kontaktujte nás</p>
+				<p class="font-display text-4xl lg:text-7xl font-black">Kontaktujte nás</p>
 			</div>
 			<article class="pt-8 relative">
-				<form class="my-4 py-8 w-2/4">
+				<form class="my-4 py-8 w-full lg:w-2/4">
 					<div class="mb-6">
 						<label class="block text-whitish-700 text-sm font-bold mb-2" for="username">
 							Jméno a příjmení
@@ -455,29 +461,31 @@
 	</section>
 
 
-	<footer class="bg-footer h-128 grid grid-cols-2 p-28">
+	<footer
+		class="bg-footer xl:justify-items-normal justify-items-center h-auto xl:h-128 grid xl:grid-cols-2 py-32 px-8 xl:p-28">
 		<article>
-			<p class="font-display text-7xl pl-16 font-black">
+			<p class="font-display text-5xl sm:text-7xl xl:pl-16 font-black">
 				<span class="text-white"> TSF </span>
 				<span class="text-primary"> Strakonice </span>
 			</p>
-			<div class="flex justify-around pt-32 pr-48">
+			<div class="xl:flex block justify-around xl:py-0 py-8 xl:pt-32 xl:pr-48">
 				<img src="./img/norma0.png" alt="ČSN NORMA 14001"
-					class="h-24 opacity-60 hover:opacity-100 rounded-4xl" />
+					class="h-24 opacity-60 m-auto my-8 xl:my-0 hover:opacity-100 rounded-4xl" />
 				<img src="./img/norma1.png" alt="ČSN NORMA 9001"
-					class="h-24 opacity-60 hover:opacity-100 rounded-4xl" />
+					class="h-24 opacity-60 m-auto my-8 xl:my-0 hover:opacity-100 rounded-4xl" />
 			</div>
 		</article>
-		<article class="w-[100%] grid grid-cols-2 content-center gap-8 align-middle">
-			<div class="flex flex-col">
-				<p class="text-4xl text-white font-extrabold">Další informace</p>
-				<p class="text-lg  pt-6 text-white">Kariéra u nás</p>
-				<p class="text-lg  pt-3 text-white">Výroční zprávy</p>
-				<p class="text-lg  pt-3 text-white">Výpis majetku</p>
-				<p class="text-lg  pt-3 text-white">Informace o firmě</p>
+		<article
+			class="w-[100%]xl:justify-items-normal justify-items-center grid xl:grid-cols-2 content-center gap-8 align-middle">
+			<div class="flex mt-8 w-full xl:mt-0 flex-col">
+				<p class="text-3xl sm:text-4xl text-white font-extrabold">Další informace</p>
+				<p class="text-lg pt-6 text-white"><a href="/kariera">Kariéra u nás</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/informace">Výroční zprávy</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/copyright">Copyright</a></p>
+				<p class="text-lg pt-3 text-white"><a href="/">Domovská stránka</a></p>
 			</div>
-			<div class="flex flex-col">
-				<p class="text-4xl text-white font-extrabold">Kontakt na nás</p>
+			<div class="flex mt-8 w-full xl:mt-0 flex-col">
+				<p class="text-3xl sm:text-4xl text-white font-extrabold">Kontakt na nás</p>
 				<p class="text-lg  pt-6 text-white">Fakturace: +420 602 237 118</p>
 				<p class="text-lg  pt-3 text-white">Logistika: +420 606 021 287</p>
 				<p class="text-lg  pt-3 text-white">Obchod a servis: +420 606 793 232 </p>
@@ -485,10 +493,8 @@
 			</div>
 		</article>
 	</footer>
-	<a href="https://www.flaticon.com/free-icons/support" title="support icons">Support icons created by Freepik -
-		Flaticon</a>
-	<a href="https://www.freepik.com/icon/fabric_12864540#fromView=keyword&page=1&position=2&uuid=62f154ef-677e-486c-b786-fc6a6fedfe4d"
-		title="Fabric icon">Designed by Freepik</a>
 </body>
+<script type="text/javascript"
+	src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>
