@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.4",
+    "tailwindcss": "^4.1.5",
     "vite": "^6.2.2"
   },
   "dependencies": {
@@ -18,5 +18,18 @@
     "lg-zoom": "^1.3.0",
     "lightgallery": "^2.8.3",
     "npx": "^10.2.2"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realWalter05/heideWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realWalter05/heideWeb/issues"
+  },
+  "homepage": "https://github.com/realWalter05/heideWeb#readme"
 }
